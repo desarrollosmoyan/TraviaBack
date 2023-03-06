@@ -1,0 +1,127 @@
+{
+  "kind": "collectionType",
+  "collectionName": "traslados",
+  "info": {
+    "singularName": "traslado",
+    "pluralName": "traslados",
+    "displayName": "traslado",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aeropuerto": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::aeropuerto.aeropuerto"
+    },
+    "destino": {
+      "type": "string",
+      "required": true
+    },
+    "zona": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::zona.zona"
+    },
+    "TipodeServicio": {
+      "type": "string",
+      "required": true
+    },
+    "zonadeArribos": {
+      "type": "string",
+      "required": true
+    },
+    "EnquePartedelaZonadeArribosEsperarasalPasajero": {
+      "type": "text",
+      "required": true
+    },
+    "EnelHotel": {
+      "type": "text"
+    },
+    "emailContacto": {
+      "type": "string",
+      "required": true
+    },
+    "Direccion": {
+      "type": "string",
+      "required": true
+    },
+    "tel1": {
+      "type": "string",
+      "required": true
+    },
+    "tel2": {
+      "type": "string",
+      "required": false
+    },
+    "tel3": {
+      "type": "string"
+    },
+    "QueseNecesitaParaRealizarelTraslado": {
+      "type": "text",
+      "required": true
+    },
+    "EnquePartedelaZonadeArribosEsperarasalPasajeroin": {
+      "type": "text"
+    },
+    "EnquePartedelaZonadeArribosEsperarasalPasajeropor": {
+      "type": "text"
+    },
+    "QueseNecesitaParaRealizarelTrasladoin": {
+      "type": "text"
+    },
+    "QueseNecesitaParaRealizarelTrasladopor": {
+      "type": "text"
+    },
+    "EnelHotelin": {
+      "type": "text"
+    },
+    "EnelHotelpor": {
+      "type": "text"
+    },
+    "dias": {
+      "type": "json"
+    },
+    "horarioDesde": {
+      "type": "time"
+    },
+    "horarioHasta": {
+      "type": "time"
+    },
+    "horasAnticipacion": {
+      "type": "integer"
+    },
+    "duracionMaximaHoras": {
+      "type": "integer"
+    },
+    "duracionMaximaMinutos": {
+      "type": "integer"
+    },
+    "vehiculo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::vehiculo.vehiculo"
+    },
+    "precio": {
+      "type": "biginteger"
+    },
+    "tarifaDesde": {
+      "type": "string"
+    },
+    "tarifaHasta": {
+      "type": "string"
+    },
+    "isAds": {
+      "type": "boolean"
+    },
+    "isLike": {
+      "type": "boolean"
+    },
+    "saleOff": {
+      "type": "boolean"
+    }
+  }
+}

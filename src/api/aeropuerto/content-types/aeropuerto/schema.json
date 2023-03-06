@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aeropuertos",
+  "info": {
+    "singularName": "aeropuerto",
+    "pluralName": "aeropuertos",
+    "displayName": "aeropuerto"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "origen": {
+      "type": "string",
+      "required": true
+    },
+    "aeropuerto": {
+      "type": "string",
+      "required": true
+    },
+    "toleranciaDeEspera": {
+      "type": "string",
+      "required": true
+    },
+    "tiempoVueloNacional": {
+      "type": "string",
+      "required": true
+    },
+    "tiempoVueloInternacional": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

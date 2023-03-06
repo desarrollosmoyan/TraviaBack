@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destino_infos",
+  "info": {
+    "singularName": "destino-info",
+    "pluralName": "destino-infos",
+    "displayName": "destinoInfo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "taxonomy": {
+      "type": "string"
+    },
+    "count": {
+      "type": "biginteger"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "listingType": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

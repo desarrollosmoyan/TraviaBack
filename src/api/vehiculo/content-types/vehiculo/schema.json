@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehiculos",
+  "info": {
+    "singularName": "vehiculo",
+    "pluralName": "vehiculos",
+    "displayName": "vehiculo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipodeServicio": {
+      "type": "string",
+      "required": true
+    },
+    "tipodeVehiculo": {
+      "type": "string",
+      "required": true
+    },
+    "Categoria": {
+      "type": "string",
+      "required": true
+    },
+    "capacidadMinimaPasajeros": {
+      "type": "integer",
+      "required": true
+    },
+    "CapacidadMaximaPasajeros": {
+      "type": "integer",
+      "required": true
+    },
+    "valijasPorPersona": {
+      "type": "integer",
+      "required": true
+    },
+    "bolsodeManoporPersona": {
+      "type": "integer",
+      "required": true
+    },
+    "capacidadMaximadeParadas": {
+      "type": "integer"
+    },
+    "imagenReferencia": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

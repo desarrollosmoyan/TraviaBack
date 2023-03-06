@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zonas",
+  "info": {
+    "singularName": "zona",
+    "pluralName": "zonas",
+    "displayName": "zona",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "destino": {
+      "type": "string",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "zonaMap": {
+      "type": "json",
+      "required": true
+    },
+    "precioZonaAeropuerto": {
+      "type": "biginteger",
+      "required": true
+    },
+    "precioAeropuertoZona": {
+      "type": "biginteger"
+    }
+  }
+}
